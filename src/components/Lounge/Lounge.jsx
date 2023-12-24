@@ -44,7 +44,7 @@ export default function Lounge() {
   }, [itemsList, selectedId])
 
   function changeItemX(e) {
-    if (!selectedItem) {
+    if (!selectedItem || e.target.value < 0) {
       return
     }
     dispatch(
@@ -58,7 +58,7 @@ export default function Lounge() {
   }
 
   function changeItemY(e) {
-    if (!selectedItem) {
+    if (!selectedItem || e.target.value < 0) {
       return
     }
     dispatch(
