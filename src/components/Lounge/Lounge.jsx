@@ -111,7 +111,7 @@ export default function Lounge() {
           <p className='work-panel__text'>X:</p>
           <input
             onChange={changeItemX}
-            value={selectedItem?.x || 0}
+            value={selectedItem?.x ?? 0}
             className='work-panel__input'
             type='number'
           />
@@ -121,7 +121,7 @@ export default function Lounge() {
           <p className='work-panel__text'>Y:</p>
           <input
             onChange={changeItemY}
-            value={selectedItem?.y || 0}
+            value={selectedItem?.y ?? 0}
             className='work-panel__input'
             type='number'
           />
@@ -130,7 +130,7 @@ export default function Lounge() {
         <div className='work-panel__input-wrapper'>
           <p className='work-panel__text'>Angle:</p>
           <input
-            value={selectedItem?.angle || 0}
+            value={selectedItem?.angle ?? 0}
             onChange={changeItemAngle}
             className='work-panel__input'
             type='number'
