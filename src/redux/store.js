@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import tablesRoundReducer from './slice_tables_round'
+import itemsListReducer from './slice_itemsList'
+import selectedItemIdReducer from './slice_selectedItemId'
 
 export default configureStore({
   reducer: {
-    tablesRoundReducer,
+    itemsListReducer,
+    selectedItemIdReducer,
   },
 })

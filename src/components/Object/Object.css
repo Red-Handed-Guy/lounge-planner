@@ -1,0 +1,39 @@
+.object {
+  background-color: #fff;
+}
+
+.object_draggable {
+  position: absolute;
+  cursor: grab;
+}
+
+.object_grabbind {
+  cursor: grabbing;
+}
+
+.object_selected {
+  box-shadow: 0px 0px 15px rgb(0, 255, 21);
+}
+
+.object__type_round-table {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.object__type_chair {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.object__type_long_table{
+  width: 100px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.object__type_partition{
+  width: 10px;
+  height: 200px;
+}

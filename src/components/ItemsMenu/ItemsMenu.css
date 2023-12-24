@@ -1,9 +1,11 @@
-.items-menu{
-  border: 1px solid red;
+.items-menu {
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .items-menu__list {
+  flex: auto 1 1;
   list-style: none;
   margin: 0;
   padding: 0;
